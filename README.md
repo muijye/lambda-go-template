@@ -27,6 +27,8 @@ Docker環境を使用することも可能です。
 
 エントリポイントのmain関数と、Lambdaで実行する関数を実装します。
 
+- [Go による Lambda 関数の構築 - AWS Lambda](https://docs.aws.amazon.com/ja_jp/lambda/latest/dg/lambda-golang.html)
+
 ``` go
 package main
 
@@ -131,7 +133,7 @@ AWS CLI を使用して .zip ファイルで関数を作成、更新します。
 
 `make create-function`で関数を作成します。
 
-関数名、ロール、環境変数（設定ファイル）はデフォルト値を指定する形になっています。
+関数名、ロール、環境変数（設定ファイル）はデフォルト値を指定する形になっています。\
 個別に指定する場合は下記の引数を指定してください。
 
 | 引数名        | 内容                      |
@@ -203,7 +205,9 @@ aws lambda update-function-configuration --function-name myFunction \
 1. テストタブを開く
 1. 右上の「テスト」ボタンをクリックする
 ※パラメータがある場合はイベントJSONからリクエスト内容を指定する。
-「実行中の関数: 成功」と表示されて、結果も想定する内容であれば、
+
+「実行中の関数: 成功」と表示されて、結果も想定する内容であればOKです。\
+データの操作を行う関数の場合はログやDBを直接確認するのも忘れずに
 
 
 ### CLIから確認
