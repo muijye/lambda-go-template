@@ -1,0 +1,17 @@
+{
+    "name": "lambda-go-template",
+    "dockerFile": "Dockerfile",
+    "workspaceFolder": "/workspaces/lambda-go-template",
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "go.toolsManagement.checkForUpdates": "off",
+                "go.gopath": "/go",
+                "go.useLanguageServer": true
+            },
+            "extensions": [
+                "golang.go"
+            ]
+        }
+    }
+}
